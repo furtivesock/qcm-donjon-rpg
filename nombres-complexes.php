@@ -12,13 +12,13 @@
 </head>
 <body>
     <!-- Retour -->
-    <a href="carte.html" class="retour" href="Carte.html">&#171; Retour vers la carte</a>
+    <a href="carte.html" class="retour" href="carte.html">&#171; Retour vers la carte</a>
     <!-- Fin Retour -->
     <!-- CONTENU -->
     <div class="contenu">
         <!-- PRESENTATION -->
         <div class="dialogue">
-            <img class="dialogue-icone" src="images/lac-fleur.png" width="15%" height="15%">
+            <img class="dialogue-icone" src="images/lac-fleur.PNG" width="15%" height="15%">
             <div class="dialogue-box" id="dialogue-qcm">
                 <div class="dialogue-texte">
                     <?php 
