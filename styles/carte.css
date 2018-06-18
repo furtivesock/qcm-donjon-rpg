@@ -1,0 +1,440 @@
+/*ENSEMBLE*/
+
+.carte-ensemble {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 600px;
+    left: 50%;
+}
+
+/*TITRE PAGE*/
+
+.carte-en-tete {
+	margin-bottom: 10px;
+}
+
+.carte-titre {
+	text-align: center;
+	text-transform: uppercase;
+	font-style: italic;
+	color: #fff;
+	font-weight: bold;
+	font-size: 30px;
+	text-shadow: 0 0 5px #fff;
+	font-family: Quattrocento;
+	
+	padding-bottom: 3px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 3px;
+}
+
+.carte-sous-titre {
+	font-family: Arial;
+	color: #fff;
+	font-size: 13px;
+	text-align: right;
+}
+
+/*Debut CARTE*/
+
+@-webkit-keyframes fondu {
+	0%, 25%{
+	opacity: 0;
+	}
+	100% {
+	opacity: 1;
+	}
+}
+
+@keyframes fondu {
+	0%, 25%{
+	opacity: 0;
+	}
+	100% {
+	opacity: 1;
+	}
+}
+
+.carte {
+	animation: fondu 1s linear;
+	font-family: 'Caveat Brush';
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-left: 4px solid #2c422f;
+    border-right: 4px solid #2c422f;
+    height: 650px;
+    border-radius: 50%;
+
+}
+/*Debut Infobulle*/
+a#info {
+   position: relative;
+}
+a#info span {
+   display: none;
+}
+
+a#info:hover span {
+	min-width: 200px;
+	max-width: 300px;
+	z-index: 99;
+	-webkit-animation: fondu 0.5s ease-in;
+	animation: fondu 0.5s ease-in;
+	display: inline-block; 
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	padding: 3px;
+	font-family: Arial;
+	font-size: 13px;
+	border-radius: 5px;
+	background-color: rgb(21, 24, 38);
+	color: #97a6bb;
+	padding: 3px;
+	border: 1px solid #697689;
+}
+/*Fin Infobulle*/
+/*Debut boss*/
+
+.boss {
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); /*LIEU INDISPONIBLE*/
+	filter: grayscale(100%);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	margin-top: 3.5%;
+	width: 200px;
+	border-radius: 70% 70% 5px 5px;
+	border: 4px double #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.5) inset;
+	padding: 3px;
+	background-image: url(../images/orage.gif);
+	opacity: 0.7;
+	-moz-transition: all .25s linear;
+	-webkit-transition: all .25s linear;
+	-o-transition: all .25s linear; 
+	transition: all .25s linear;
+	
+}
+
+.boss-texte {
+	padding: 3px 3px 5px 5px;
+	border-radius: 5px;
+	font-size: 35px;
+	line-height: 100%;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+	-moz-transition: all .25s linear;
+	-webkit-transition: all .25s linear;
+	-o-transition: all .25s linear; 
+	transition: all .25s linear;
+}
+
+.boss:hover {
+	opacity: 1;
+}
+
+.boss-texte:hover {
+}
+
+/*Fin Boss*/
+
+/*Premiere ligne*/
+.haut {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+/*Debut Arbre*/
+.arbre {
+	filter: grayscale(100%); /*LIEU INDISPONIBLE*/
+    -webkit-filter: grayscale(100%);
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../images/arbre.png);
+	border-radius: 50%;
+	opacity: 0.7;
+	
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out; 
+	transition: all .25s ease-in-out;
+}
+
+.arbre-texte {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 5px #000;
+	line-height: 100px;
+	font-size: 30px;
+}
+
+.arbre:hover {
+	opacity: 1;
+	transform: scale(1.2);
+}
+/*Fin Arbre*/
+
+/*Debut Desert*/
+.desert {
+	filter: grayscale(100%); /*LIEU INDISPONIBLE*/
+    -webkit-filter: grayscale(100%);
+	display: inline-block;
+	width: 160px;
+	height: 100px;
+	border-radius: 80% 1.2em;
+	margin-right: 30px;
+	opacity: 0.7;
+	background-image: url(../images/desert.png);
+	background-position: center;
+	background-size: 160%;
+	border-left: 6px solid #3c2e29;
+	border-right: 6px solid #3c2e29;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out; 
+	transition: all .25s ease-in-out;
+}
+
+.desert-texte {
+	border-radius: 70% 0;
+	width: 160px;
+	height: 100px;
+	text-align: center;
+	color: purple;
+	text-shadow: 0 0 5px #fff;
+	line-height: 100px;
+	font-size: 30px;
+	transform:rotate(-20deg);
+}
+
+.desert:hover {
+	box-shadow: 0 0 15px #3c2e29;
+	opacity: 1;
+	transform:rotate(-10deg); 
+	-ms-transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg); 
+	-webkit-transform:rotate(-10deg);
+	-o-transform:rotate(-10deg); 
+	
+}
+/*Fin Desert*/
+
+/*Debut Souterrains*/
+.souterrains {
+	display: inline-block;
+    width: 160px;
+    height: 100px;
+    border-radius: 1.2em 80%;
+    margin-left: 30px;
+    opacity: 0.7;
+    background-image: url(../images/lave.png);
+    background-position: bottom center;
+    border-left: 6px solid #3c2e29;
+    border-right: 6px solid #3c2e29;
+    text-align: center;
+    text-shadow: 0 0 5px purple;
+    color: #000;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.souterrains-texte {
+    width: 160px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 30px;
+    transform: rotate(20deg);
+}
+
+.souterrains:hover {
+	box-shadow: 0 0 15px #3c2e29;
+	opacity: 1;
+	transform:rotate(10deg); 
+	-ms-transform:rotate(10deg);
+	-moz-transform:rotate(10deg); 
+	-webkit-transform:rotate(10deg);
+	-o-transform:rotate(10deg); 
+}
+/*Fin Souterrains*/
+/*Fin Première ligne*/
+
+/*Debut Lac*/
+.lac {
+	display: inline-block;
+	margin-bottom: 20px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-image: url(../images/lac.gif);
+	border-left: 6px solid #85fbff; 
+	border-right: 6px solid #85fbff;
+	opacity: 0.7;
+	-moz-transition: all .25s linear;
+	-webkit-transition: all .25s linear;
+	-o-transition: all .25s linear; 
+	transition: all .25s linear;
+}
+
+.lac-texte {
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 0 5px #fff;
+	line-height: 150px;
+	font-size: 50px;
+	
+	-moz-transition: all .25s linear;
+	-webkit-transition: all .25s linear;
+	-o-transition: all .25s linear; 
+	transition: all .25s linear;
+}
+
+.lac:hover {
+	box-shadow: 0 0 15px #85fbff;
+	opacity: 1;
+	transform:rotate(360deg); 
+	-ms-transform:rotate(360deg);
+	-moz-transform:rotate(360deg); 
+	-webkit-transform:rotate(360deg);
+	-o-transform:rotate(360deg); 
+}
+/*Fin Lac*/
+
+/*Debut 2ème ligne*/
+
+.bas {
+	display: inline-block;
+}
+
+/*Debut Village*/
+.village {
+	border-radius: 0 70%;
+	display:inline-block;
+	width: 150px;
+	height: 100px;
+	border-radius: 1.2em 80%;
+	background-image: url(../images/village.png);
+	background-position: center bottom;
+    background-size: 110%;
+	border-left: 6px solid #3c2e29; 
+	border-right: 6px solid #3c2e29;
+	margin-right: 15px;
+	opacity: 0.7;
+	
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out; 
+	transition: all .25s ease-in-out;
+}
+
+.village-texte {
+	
+	text-align: center;
+	line-height: 100px;
+	font-size: 30px;
+	transform:rotate(20deg);
+	color: #e69674;
+    text-shadow: 0 0 5px #000;
+}
+
+.village:hover {
+	box-shadow: 0 0 15px #3c2e29;
+	opacity: 1;
+	transform:rotate(10deg); 
+	-ms-transform:rotate(10deg);
+	-moz-transform:rotate(10deg); 
+	-webkit-transform:rotate(10deg);
+	-o-transform:rotate(10deg); 
+}
+/*Fin Village*/
+
+/*Debut Foret*/
+.foret {
+	display: inline-block;
+	width: 130px;
+	height: 100px;
+	opacity: 0.7;
+	border-radius: 50%;
+	background-image: url(../images/foret.png);
+	background-size: 130% 130%;
+	background-position: center bottom;
+	border-left: 6px solid #3c2e29; border-right: 6px solid #3c2e29;
+	
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out; 
+	transition: all .25s ease-in-out;
+}
+
+.foret-texte {
+	text-shadow: 1px 2px 0 #5c8d7e, 0px 0px 10px #000;
+	text-align: center;
+	line-height: 100px;
+	font-size: 30px;
+	color: #fff;
+}
+
+.foret:hover {
+	box-shadow: 0 0 15px #3c2e29;
+	transform: scale(1.05);
+	opacity: 1;
+}
+/*Fin Foret*/
+
+/*Debut Clairiere*/
+.clairiere {
+	filter: grayscale(100%); /*LIEU INDISPONIBLE*/
+    -webkit-filter: grayscale(100%);
+	margin-left: 15px;
+	width: 160px;
+	height: 100px;
+	border-radius: 80% 1.2em;
+	background-image: url(../images/maison-foret.jpg);
+	background-position: center bottom;
+	background-size: 100% 100%;
+	border-left: 6px solid #3c2e29; border-right: 6px solid #3c2e29;
+	margin-left: 15px;
+	display: inline-block;
+	opacity: 0.7;
+	
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out; 
+	transition: all .25s ease-in-out;
+}
+
+.clairiere-texte {
+	text-align: center;
+	line-height: 100px;
+	font-size: 30px;
+	color: #a0d600;
+    text-shadow: 0 0 5px #000;
+	transform:rotate(-20deg);
+}
+
+.clairiere:hover {
+	box-shadow: 0 0 15px #3c2e29;
+	opacity: 1;
+	transform:rotate(-10deg); 
+	-ms-transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg); 
+	-webkit-transform:rotate(-10deg);
+	-o-transform:rotate(-10deg); 
+}
+/*Fin Clairiere*/
+/*Fin 2eme ligne*/
+
+/*Fin CARTE*/

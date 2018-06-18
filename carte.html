@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>QCM Donjon RPG</title>
+	<link href="styles/default.css" rel="stylesheet" type="text/css">
+	<link href="styles/carte.css" rel="stylesheet" type="text/css">
+	<link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+	<style>
+	</style>
+</head>
+<body>
+	<div class="carte-ensemble">
+		<!-- DEBUT PRESENTATION -->
+		<div class="carte-en-tete">
+			<div class="carte-titre">
+				Carte
+			</div>
+			<div class="carte-sous-titre">
+				Cliquez sur le lieu où vous souhaitez vous rendre.<br>
+				Déplacez le curseur pour afficher une infobulle qui vous indiquera ce que vous y retrouverez. Il ne faudrait pas que vous vous perdiez encore.
+			</div>
+		</div><!-- FIN PRESENTATION -->
+		<!-- DEBUT CARTE -->
+		<div class="carte">
+			<!-- Début Boss -->
+			<a href="#">
+				<div class="boss">
+					<div class="boss-texte">
+						THE BOSS
+						<br>
+						Verrouillé
+					</div>
+				</div>
+			</a>
+			<!-- Fin Boss -->
+			<div class="haut">
+				<!-- Début Désert -->
+				<a href="#" id="info">
+					<div class="desert">
+						<div class="desert-texte">
+							Désert
+						</div>
+					</div>
+					<span><i>Un vent du désert vous effleure la peau et vous l'entendez dire des paroles pleines de sagesse :</i>
+					<br>
+					Seuls ceux qui ont le désir de s'entraîner en <font color="#fff"><b>géométrie</b></font> sont invités à affronter les tempêtes de sable et la chaleur du désert.
+					<br><font color="red"><b>INACESSIBLE :(</b></font>
+					</span>
+				</a> 
+				<!-- Fin Désert -->
+				 <!-- Début Arbre -->
+				<a href="#" id="info">
+					<div class="arbre">
+						<div class="arbre-texte">
+							Arbre
+						</div>
+					</div>
+					<span>*<i>Un arbre ? 'Faut sûrement s'y connaître en <font color="#fff"><b>plantes</b></font>.</i>*
+					<br>
+					<font color="red"><b>INACESSIBLE :(</b></font></span> 
+				</a><!-- Fin Arbre -->
+				 <!-- Début Souterrains -->
+				<a href="souterrains.html" id="info">
+					<div class="souterrains">
+						<div class="souterrains-texte">
+							Souterrains
+						</div>
+					</div>
+					<span>*<i>Hm.. je pense que cette zone est surtout réservée aux spécialistes des volcans, donc ceux qui font <font color="#fff"><b>SVT</b></font>... Et très problablement, d'après mon instinct, on y trouvera les <font color="#fff"><b>transferts thermiques</b></font>, <font color="#fff"><b>quantiques</b></font> et je ne sais pourquoi, les <font color="#fff"><b>enjeux énergétiques</b></font></i>*
+					</span> 
+				</a>
+				<!-- Fin Souterrains -->
+			</div>
+				
+				<!-- Début Lac -->
+			<a href="lac.html" id="info">
+				<div class="lac">
+					<div class="lac-texte">
+						Lac
+					</div>
+				</div>
+				<span>Qui aurait cru qu'au centre de la forêt se trouverait un lac ? Ce lac semble pourtant presque irréel vu la clarté de l'eau. Mais cette étrange atmosphère vous rassure et vous donne envie de rester plus longtemps. Attention à ne pas se laisser envoûter par les <font color="#fff"><b>énigmes algèbriques</b></font>, <font color="#fff"><b>nombres complexes</b></font> et leurs <font color="#fff"><b>ondes</b></font> malfaisantes..
+				</span> 
+			</a>
+				<!-- Fin Lac -->
+			<div class="bas">
+				<!-- Début Village -->
+				<a href="village.html" id="info">
+					<div class="village">
+						<div class="village-texte">
+							Village
+						</div>
+					</div>
+					<span><i>Vous lisez une affiche collée sur un arbre.</i>
+					<br>
+					"Les individus qui sont en <font color="#fff"><b>SI</b></font> sont les bienvenus !
+					<br>
+					Venez nombreux !"
+					</span>
+				</a>
+				<!-- Fin Village -->
+				 <!-- Début Foret -->
+				 <a href="foret.html" id="info">
+					<div class="foret">
+						<div class="foret-texte">
+							Forêt
+						</div>
+					</div>
+					<span>Oserez-vous vous aventurer dans la forêt de la méconnaissance ? Les Qcmonstres de type <font color="#fff"><b>Physique</b></font> t'attendent pour te dévorer !</font>
+					</span> 
+				</a>
+				<!-- Fin Forêt -->
+				 <!-- Début Clairiere -->
+				<a href="#" id="info">
+					<div class="clairiere">
+						<div class="clairiere-texte">
+							Clairière
+						</div>
+					</div>
+					<span>La légende dit qu'un <b>al<font color="#fff">chimiste</font></b> introverti vivrait dans une maisonnette au fin fond de la forêt..
+					<br>
+					<font color="red"><b>INACESSIBLE :(</b></font>
+					</span>
+				</a>				<!-- Fin Clairiere -->
+			</div>
+		</div><!-- FIN CARTE -->
+	</div>
+</body>
+</html>
