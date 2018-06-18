@@ -19,7 +19,7 @@
     <div class="contenu">
         <!-- PRESENTATION -->
         <div class="dialogue">
-            <img class="dialogue-icone" src="images/ours.png" width="15%" height="15%">
+            <img class="dialogue-icone" src="images/ours.PNG" width="15%" height="15%">
             <div class="dialogue-box" id="dialogue-qcm">
                 <div class="dialogue-texte">
                     <?php 
